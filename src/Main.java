@@ -10,11 +10,16 @@ public class Main {
         Student clarence = new Student("Clarence", 3.93);
 
         List<Student> students = new ArrayList<>();
+        students.add(mark);
+        students.add(linda);
+        students.add(clarence);
+
         Collections.sort(students);
-        System.out.println(students);
 
-        // TODO: continue :)
 
+        for (Student student : students) {
+            System.out.println(student);
+        }
 
     }
 }
